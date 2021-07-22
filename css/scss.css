@@ -13,11 +13,8 @@ body {
   /*background-color: wheat;*/
   font-size: 1.2rem;
   font-weight: 300;
-  width: 100%; }
-
-header {
-  /*background-image: url("../logo/fondo.jpg");*/
-  background-size: stretch; }
+  width: 100%;
+  /*background-image: url(../fotos/hoja1.jpg);*/ }
 
 h1 {
   font-family: "Yellowtail", cursive;
@@ -88,8 +85,26 @@ footer {
   width: 100%; }
 
 .container {
-  width: 90%;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+.containergrande {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
+  .containergrande::before {
+    content: "";
+    background-image: url("../fotos/woman-having-a-massage-3997990.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.50; }
 
 .fotoscat1 {
   transition: all 0.5s;
