@@ -96,9 +96,10 @@ footer {
 
 .container {
     width: 100%;
-    margin: 0 auto;
+    
     position: relative;
 }
+
 
 
 .containergrande {
@@ -107,16 +108,14 @@ footer {
         position: relative; 
         height: 100%;
         width: 100%;
-        align-items: center;
-        justify-content: center;
         //background-image: url('https://placekitten.com/1200/800');
         //background-size: cover;
         //opacity: 0.75;
         
         &::before {  
             content: "";
-          //  background-image: url('../fotos/woman-having-a-massage-3997990.jpg');
-            background-size: cover;
+            background-image: url('../fotos/piernas.jpg');
+            background-size: auto;
             position: absolute;
             top: 0px;
             right: 0px;
