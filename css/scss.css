@@ -37,12 +37,14 @@ h4 {
   font-weight: 500; }
 
 footer {
-  background: lightgrey;
+  background: #1F3253;
   height: 10rem; }
+  footer p {
+    color: white; }
 
 /*barra navegacion*/
 .bg-dark {
-  background-color: teal !important; }
+  background-color: #1F3253 !important; }
 
 /*seccion Catalogo*/
 #catalogo {
@@ -55,20 +57,6 @@ footer {
   grid-template-columns: 100%;
   grid-template-rows: 10fr;
   justify-content: space-evenly; }
-
-.nav1 ul {
-  display: flex;
-  list-style: none;
-  background: teal;
-  justify-content: space-around; }
-  .nav1 ul li a {
-    color: white;
-    display: block;
-    text-decoration: none;
-    font-size: 75%; }
-  .nav1 ul li a:hover {
-    background: #0d6efd;
-    color: white; }
 
 .containerfoto {
   height: 100%;
@@ -97,7 +85,6 @@ footer {
   justify-content: center; }
   .containergrande::before {
     content: "";
-    background-image: url("../fotos/woman-having-a-massage-3997990.jpg");
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -268,31 +255,6 @@ textarea {
 
 .detailselect {
   grid-area: detailselect; }
-
-/* redes sociales*/
-#redes {
-  margin-left: auto;
-  margin-right: 100;
-  width: 10rem; }
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%; }
-
-.fa:hover {
-  opacity: 0.7; }
-
-.fa-facebook {
-  background: #3b5998;
-  color: white; }
-
-.fa-twitter {
-  background: #55acee;
-  color: white; }
 
 /* media querys*/
 @media only screen and (min-width: 768px) {
