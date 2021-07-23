@@ -17,23 +17,19 @@ body {
   /*background-image: url(../fotos/hoja1.jpg);*/ }
 
 h1 {
-  font-family: "Yellowtail", cursive;
   font-size: 1.5rem;
   font-weight: 500; }
 
 h2 {
-  font-family: "Yellowtail", cursive;
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 500; }
 
 h3 {
-  font-family: "Yellowtail", cursive;
-  font-size: 0.5rem;
+  font-size: 0.83333rem;
   font-weight: 500; }
 
 h4 {
-  font-family: "Yellowtail", cursive;
-  font-size: 0.375rem;
+  font-size: 0.75rem;
   font-weight: 500; }
 
 footer {
