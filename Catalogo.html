@@ -7,26 +7,35 @@
 
 <head>
   <!--cabeza de sitio-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tierras Del Volcan - Catalogo</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/normalizar.css">
+
+  <!--seo y descripcio-->
+  <meta name="description" content="Tierras del volcan es una linea de productos para el cuidado de la piel unica">
+  <meta name="keywords" content="fango, crema, skincare">
+
+  <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tierras del volcan es una linea de productos para el cuidado de la piel unica">
-  <meta name="keywords" content="fango, crema, skincare">
+
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/normalizar.css">
   <link rel="stylesheet" href="css/scss.css">
+  <link rel="stylesheet" href="js/glightbox/css/glightbox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--iconos-->
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
 </head>
 
 <body>
   <!--contendio de la pagina-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+
   <header>
     <div class="logo">
       <img src="./logo/fondo.jpg" alt="logo" class="logo">
@@ -34,18 +43,18 @@
     </div>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
-          aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavTierras"
+          aria-controls="NavTierras" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExample04">
+        <div class="collapse navbar-collapse" id="NavTierras">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Catalogo.html">Catalogo</a>
+              <a class="nav-link active" href="Catalogo.html">Catalogo</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Cursos.html">Cursos</a>
@@ -63,22 +72,141 @@
 
 
   </header>
+  <!-- ======= Portfolio Section ======= -->
+  <div id="portfolio" class="portfolio-area area-padding fix">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>Our Portfolio</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row wesome-project-1 fix">
+        <!-- Start Portfolio -page -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">Todos</li>
+            <li data-filter=".filter-Fango">Fango</li>
+            <li data-filter=".filter-Agua">Agua Termal</li>
+            <li data-filter=".filter-Cremas">Cremas</li>
+          </ul>
+        </div>
+      </div>
 
-  <div class="catalogo">
-    <div class="imagenescat">
-      <div class="containerfoto">
-        <img src="./fotos/Catalogo/slide2.jpg" alt="fotocat">
+      <div class="row awesome-project-content portfolio-container">
+
+        <!-- portfolio-item start -->
+        <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-Fango portfolio-item">
+          <div class="single-awesome-project">
+            <div class="awesome-img">
+              <a href="#"><img src="assets/img/portfolio/1.jpg" alt="" /></a>
+              <div class="add-actions text-center">
+                <div class="project-dec">
+                  <a class="portfolio-lightbox" data-gallery="myGallery" href="assets/img/portfolio/1.jpg">
+                    <h4>Business City</h4>
+                    <span>Web Development</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- portfolio-item end -->
+
+        <!-- portfolio-item start -->
+        <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-web">
+          <div class="single-awesome-project">
+            <div class="awesome-img">
+              <a href="#"><img src="assets/img/portfolio/2.jpg" alt="" /></a>
+              <div class="add-actions text-center">
+                <div class="project-dec">
+                  <a class="portfolio-lightbox" data-gallery="myGallery" href="assets/img/portfolio/2.jpg">
+                    <h4>Blue Sea</h4>
+                    <span>Photosho</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- portfolio-item end -->
+
+        <!-- portfolio-item start -->
+        <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-card">
+          <div class="single-awesome-project">
+            <div class="awesome-img">
+              <a href="#"><img src="assets/img/portfolio/3.jpg" alt="" /></a>
+              <div class="add-actions text-center">
+                <div class="project-dec">
+                  <a class="portfolio-lightbox" data-gallery="myGallery" href="assets/img/portfolio/3.jpg">
+                    <h4>Beautiful Nature</h4>
+                    <span>Web Design</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- portfolio-item end -->
+
+        <!-- portfolio-item start -->
+        <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-web">
+          <div class="single-awesome-project">
+            <div class="awesome-img">
+              <a href="#"><img src="assets/img/portfolio/4.jpg" alt="" /></a>
+              <div class="add-actions text-center">
+                <div class="project-dec">
+                  <a class="portfolio-lightbox" data-gallery="myGallery" href="assets/img/portfolio/4.jpg">
+                    <h4>Creative Team</h4>
+                    <span>Web design</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- portfolio-item end -->
+
+        <!-- portfolio-item start -->
+        <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-app">
+          <div class="single-awesome-project">
+            <div class="awesome-img">
+              <a href="#"><img src="assets/img/portfolio/5.jpg" alt="" /></a>
+              <div class="add-actions text-center text-center">
+                <div class="project-dec">
+                  <a class="portfolio-lightbox" data-gallery="myGallery" href="assets/img/portfolio/5.jpg">
+                    <h4>Beautiful Flower</h4>
+                    <span>Web Development</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- portfolio-item end -->
+
+        <!-- portfolio-item start -->
+        <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-web">
+          <div class="single-awesome-project">
+            <div class="awesome-img">
+              <a href="#"><img src="assets/img/portfolio/6.jpg" alt="" /></a>
+              <div class="add-actions text-center">
+                <div class="project-dec">
+                  <a class="portfolio-lightbox" data-gallery="myGallery" href="assets/img/portfolio/6.jpg">
+                    <h4>Night Hill</h4>
+                    <span>Photoshop</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- portfolio-item end -->
+
       </div>
     </div>
-    <div class="fotselect">
-      <div class="containerfoto">
-        <img src="./fotos/Catalogo/Colageno.jpg" alt="fotodet">
-      </div>
-    </div>
-    <div class="detailselect">
-      <p>Texto informativo sobre el serum termal</p>
-    </div>
-  </div>
+  </div><!-- End Portfolio Section -->
   <footer>
     <div class="row">
       <div class="col-lg-6">
@@ -92,8 +220,24 @@
         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
       </div>
     </div>
-    
+
   </footer>
+
+  <!-- Scripts js y Bootstrap -->
+
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+
+
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+
 </body>
 
 </html>
