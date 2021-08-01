@@ -300,19 +300,12 @@ textarea {
   border: 1px solid #444; }
 
 #portfolio-flters li:hover, #portfolio-flters li.filter-active {
-  border-color: #3EC1D5;
-  background: #3EC1D5;
+  border-color: #1f3253;
+  background: #1f3253;
   color: #fff; }
 
 #portfolio-flters li:last-child {
   margin-right: 0; }
-
-.single-awesome-portfolio {
-  float: left;
-  overflow: hidden;
-  padding: 15px;
-  width: 25%;
-  position: relative; }
 
 .single-awesome-project {
   overflow: hidden;
