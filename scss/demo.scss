@@ -10,6 +10,13 @@ $font-chica: 0.75rem;
 
 /*clases Globales*/
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
 a {
     transition: all 0.3s ease 0s;
     text-decoration: none;
@@ -26,9 +33,12 @@ body {
 
 footer {
     background: $colorprimario;
-    height: 10rem;
+    height: 8rem;
+    margin-top: 10px;
+    width: 100%;
     p {
         color: $colorclaro;
+        font-size: 80%;
     }
 }
 
@@ -37,18 +47,12 @@ footer {
     background-color: $colorprimario !important;
 }
 
-.text-center {
-    align-self: center;
-    margin: auto;
-    text-align: center !important;
-}
-.font-clear {
-    color: $colorclaro;
+.navbar {
+height: 40px;
+width:100%;
 }
 
-.navbar-mobile {
-    position: relative;
-}
+
 
 /*seccion carrusel*/
 
@@ -61,6 +65,7 @@ footer {
     right: 0;
     left: 0;
     bottom: 0;
+    width: 100%;
 }
 
 #carousel {
@@ -75,6 +80,7 @@ footer {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        width: 100%;
     }
     h2 {
         margin-bottom: 20px;
@@ -90,6 +96,7 @@ footer {
 
     .carousel-inner {
         text-align: center;
+        width: 100%;
     }
 
     .carousel-container {
@@ -101,6 +108,7 @@ footer {
         bottom: 0;
         top: 70px;
         left: 50px;
+        width: 100%;
         right: 50px;
     }
 
@@ -143,6 +151,10 @@ footer {
     //opacity: 0.75;
 }
 
+.container {
+    width: 100%;
+}
+
 .fotoscat1 {
     transition: all 0.5s;
     height: auto;
@@ -159,7 +171,7 @@ footer {
     border: 2px solid $colorprimario;
     font-size: $font-chica;
     border-radius: 0.3rem;
-    width: 300px;
+    width: 200px;
 
     a {
         display: block;
@@ -168,7 +180,7 @@ footer {
         margin: auto;
         padding: 1px;
         color: white;
-        font-size: 70%;
+        font-size: 90%;
     }
 }
 
@@ -318,8 +330,6 @@ textarea {
         border: 1px solid $colorprimario;
 
         &:hover,
-       
-
         &:last-child {
             margin-right: 0;
         }
@@ -333,7 +343,6 @@ textarea {
 .single-awesome-project {
     overflow: hidden;
     margin-bottom: 30px;
-
 }
 
 .awesome-img {
@@ -438,6 +447,10 @@ textarea {
     width: 100%;
 }
 
+
+
+
+
 /* media querys*/
 @media only screen and (min-width: 768px) {
     #fotoscat {
@@ -496,9 +509,7 @@ textarea {
     #infocurso {
         max-width: 50%;
     }
-    .fotoscursos1 {
-        max-width: 1224;
-    }
+
     .fotoContacto {
         display: block;
     }
