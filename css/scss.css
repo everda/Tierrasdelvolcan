@@ -1,8 +1,4 @@
 /*clases Globales*/
-* {
-  margin: 0px;
-  padding: 0px; }
-
 a {
   transition: all 0.3s ease 0s;
   text-decoration: none; }
@@ -17,7 +13,7 @@ body {
 
 footer {
   background: #1f3253;
-  height: 8rem;
+  height: 10rem;
   margin-top: 10px;
   width: 100%; }
   footer p {
@@ -28,9 +24,13 @@ footer {
 .bg-dark {
   background-color: #1f3253 !important; }
 
-.navbar {
-  height: 40px;
-  width: 100%; }
+.text-center {
+  align-self: center;
+  margin: auto;
+  text-align: center !important; }
+
+.font-clear {
+  color: white; }
 
 /*seccion carrusel*/
 #carousel .carousel,
@@ -55,8 +55,7 @@ footer {
   #carousel .carousel-item {
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    width: 100%; }
+    background-repeat: no-repeat; }
   #carousel h2 {
     margin-bottom: 20px;
     font-size: 2rem;
@@ -67,8 +66,7 @@ footer {
     line-height: 1.2;
     margin: 0 auto 30px auto; }
   #carousel .carousel-inner {
-    text-align: center;
-    width: 100%; }
+    text-align: center; }
   #carousel .carousel-container {
     display: flex;
     flex-direction: column;
@@ -326,23 +324,6 @@ textarea {
     font-size: 1rem; }
     .project-dec span:hover {
       color: #a8a8a8; }
-
-.project-action-btn {
-  display: block;
-  height: 100%;
-  text-align: center;
-  transition: all 1s ease 0s;
-  width: 100%; }
-
-.project-action-btn li {
-  display: block;
-  height: 100%;
-  width: 100%; }
-
-.project-action-btn li a {
-  display: block;
-  height: 100%;
-  width: 100%; }
 
 /* media querys*/
 @media only screen and (min-width: 768px) {
