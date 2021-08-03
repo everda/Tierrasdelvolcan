@@ -302,6 +302,8 @@ textarea {
 
 /*Clases Catalogo.html*/
 
+
+
 #portfolio-flters {
     padding: 0;
     margin: 5px 0 35px 0;
@@ -311,18 +313,22 @@ textarea {
         cursor: pointer;
         margin: 15px 15px 15px 0;
         display: inline-block;
-        padding: 4px 12px;
-        font-size: $font-chica;
+        padding: 8px 24px;
+        font-size: 12px;
         line-height: 20px;
         color: #555;
         border-radius: 50px;
-
+        text-transform: uppercase;
         background: #fff;
         margin-bottom: 5px;
         transition: all 0.3s ease-in-out;
-        border: 1px solid $colorprimario;
+        border: 1px solid #444;
 
-        &:hover,
+        &:hover{
+            border-color: $colorprimario;
+            background: $colorprimario;
+            color: #fff;
+        }
         &:last-child {
             margin-right: 0;
         }
@@ -331,6 +337,12 @@ textarea {
         border-color: $colorprimario;
         background: $colorprimario;
         color: #fff;
+        &:hover{
+            border-color: $colorprimario;
+            background: $colorprimario;
+            color: #fff;
+        }
+
     }
 }
 .single-awesome-project {
