@@ -230,18 +230,12 @@ footer {
     margin: 10px;
 }
 
-/*clases de Contacto*/
+/*clases de Cursos*/
 
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
+.cursos{
+    margin: 0.3rem;
+    img{width: 100%;}
+    justify-content: space-around;
 }
 
 
@@ -291,7 +285,7 @@ textarea {
     }
 }
 
-/*Clases Catalogo.html*/
+/*clases contacto*/
 
 .btn {
     background-color: $colorprimario;
@@ -303,7 +297,7 @@ textarea {
     
 }
 
-/*clases contacto*/
+
 .fotoContacto{
     img{
         width: 100%;
@@ -311,8 +305,22 @@ textarea {
     }
     display: none;
 }
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
 
 
+
+
+/*clases Catalogo*/
 #portfolio-flters {
     padding: 0;
     margin: 5px 0 35px 0;
@@ -442,62 +450,18 @@ textarea {
     }
 }
 
+
+
+
+
 /* media querys*/
 @media only screen and (min-width: 768px) {
-    #fotoscat {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
-        justify-content: space-evenly;
-    }
 
-    .inglnk a {
-        width: 100%;
-    }
-
-    #protocolos {
-        flex-direction: row;
-    }
-
-    #cursos {
-        flex-direction: row;
-    }
-
-    #infocurso {
-        max-width: 50%;
-    }
-
-    .fotoscursos1 {
-        max-width: 720px;
-    }
 
 }
 
 @media only screen and (min-width: 1224px) {
-    #fotoscat {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 10fr;
-        justify-content: space-evenly;
-        font-size: 100%;
-    }
-
-    .inglnk a {
-        width: 100%;
-    }
-
-    #protocolos {
-        flex-direction: row;
-    }
-
-    #cursos {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    #infocurso {
-        max-width: 50%;
-    }
+   
 
     .fotoContacto{
         img{
