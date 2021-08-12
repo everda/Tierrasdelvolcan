@@ -20,6 +20,12 @@ footer {
     color: white;
     font-size: 80%; }
 
+.f-dark {
+  color: #1f3253; }
+
+.f-light {
+  color: white; }
+
 /*barra navegacion*/
 .bg-dark {
   background-color: #1f3253 !important; }
@@ -46,7 +52,7 @@ footer {
 
 #carousel {
   width: 100%;
-  height: 60vh;
+  height: 40vh;
   background: #1f3253;
   overflow: hidden;
   position: relative;
@@ -73,11 +79,11 @@ footer {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0;
-    top: 70px;
-    left: 50px;
+    bottom: 50px;
+    top: auto;
+    left: 0px;
     width: 100%;
-    right: 50px; }
+    right: auto; }
   #carousel .btn-cat {
     font-weight: 500;
     font-size: 16px;
@@ -177,23 +183,6 @@ textarea {
   box-sizing: border-box;
   resize: vertical; }
 
-.fotoContacto {
-  margin: 10px;
-  width: 50%;
-  height: auto;
-  display: none; }
-
-.fotoContacto img {
-  width: 100%; }
-
-.botones {
-  display: inline-block;
-  flex-direction: row; }
-
-.botones input {
-  background-color: #0d6efd;
-  color: white; }
-
 /*clases Protocolo*/
 .protocolos {
   display: grid;
@@ -229,6 +218,21 @@ textarea {
     color: white; }
 
 /*Clases Catalogo.html*/
+.btn {
+  background-color: #1f3253; }
+
+.form-group {
+  margin-bottom: 0.5rem; }
+  .form-group label {
+    margin-bottom: 0rem; }
+
+/*clases contacto*/
+.fotoContacto {
+  display: none; }
+  .fotoContacto img {
+    width: 100%;
+    display: none; }
+
 #portfolio-flters {
   padding: 0;
   margin: 5px 0 35px 0;
@@ -350,9 +354,7 @@ textarea {
   #infocurso {
     max-width: 50%; }
   .fotoscursos1 {
-    max-width: 720px; }
-  .fotoContacto {
-    display: block; } }
+    max-width: 720px; } }
 
 @media only screen and (min-width: 1224px) {
   #fotoscat {
@@ -371,4 +373,7 @@ textarea {
   #infocurso {
     max-width: 50%; }
   .fotoContacto {
-    display: block; } }
+    display: block; }
+    .fotoContacto img {
+      width: 100%;
+      display: block; } }
