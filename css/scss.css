@@ -38,6 +38,10 @@ footer {
 .font-clear {
   color: white; }
 
+/*navbar*/
+.navbar {
+  margin-bottom: 10px; }
+
 /*seccion carrusel*/
 #carousel .carousel,
 #carousel .carousel-inner,
