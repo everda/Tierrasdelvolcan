@@ -230,10 +230,11 @@ footer {
     margin: 0.3rem;
     img{width: 100%;}
     justify-content: space-around;
-    border: 1px solid black;
+    // border: 1px solid black;
     border-radius: 4px;
     padding-bottom: 10px ;
     padding-top: 10px ;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.39);
     p{
         margin-top:10px;
         margin-bottom:10px;

@@ -167,10 +167,10 @@ footer {
 .cursos {
   margin: 0.3rem;
   justify-content: space-around;
-  border: 1px solid black;
   border-radius: 4px;
   padding-bottom: 10px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.39); }
   .cursos img {
     width: 100%; }
   .cursos p {
