@@ -178,38 +178,12 @@ hr.prueba{
     //opacity: 0.75;
 }
 
-.container {
-    width: 100%;
-}
 
 .fotoscat1 {
     transition: all 0.5s;
     height: auto;
 }
 
-.inglnk {
-    margin-top: 20px;
-    height: auto;
-    color: $colorprimario;
-    padding: 0.375rem 0.75rem;
-    border-radius: 0.25rem;
-    color: #fff;
-    background-color: $colorprimario;
-    border: 2px solid $colorprimario;
-    font-size: $font-chica;
-    border-radius: 0.3rem;
-    width: 200px;
-
-    a {
-        display: block;
-        text-decoration: none;
-        text-align: center;
-        margin: auto;
-        padding: 1px;
-        color: white;
-        font-size: 90%;
-    }
-}
 
 .inglnk:hover {
     border: 2px solid darkblue;
@@ -228,17 +202,7 @@ hr.prueba{
 
 
 /*seccion protocolos*/
-#protocolos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: auto;
-}
 
-#infoprotocolo {
-    height: auto;
-    margin: 10px;
-}
 
 /*clases de Cursos*/
 
@@ -265,49 +229,6 @@ hr.prueba{
 
 
 /*clases Protocolo*/
-
-.protocolos {
-    display: grid;
-    grid-template-areas:
-        "brazo none protimg protimg"
-        "brazo none protdet protdet";
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 100px 5% auto 35%;
-    height: 80vh;
-    padding: 5px;
-    margin-top: 0px;
-}
-
-.brazo {
-    grid-area: brazo;
-    margin: 0px;
-    padding: 0px;
-    background-color: $colorprimario;
-}
-
-.protimg {
-    grid-area: protimg;
-}
-
-.protdet {
-    grid-area: protdet;
-}
-
-.brazo {
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        a {
-            display: block;
-            text-decoration: none;
-            text-align: center;
-            margin: auto;
-            padding: 1px;
-            color: white;
-        }
-    }
-}
 
 /*clases contacto*/
 
