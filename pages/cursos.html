@@ -22,15 +22,16 @@
 
 
 
-  <!--CSS-->
+  <!--CSS externo-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/normalizar.css">
-  <link rel="stylesheet" href="../css/scss.css">
-  <link rel="stylesheet" href="../js/glightbox/css/glightbox.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!--iconos-->
+  <!--css local-->
+  <link rel="stylesheet" href="../css/normalizar.css">
+  <link rel="stylesheet" href="../css/scss.css">
 
 
 </head>
@@ -73,11 +74,10 @@
 
   </header>
 
-  <div class="container">
+  <div class="container ">
     <h1 class="text-center">Cursos</h1>
-    <div class="row justify-content-sm-around">
+    <div class="row justify-content-sm-around"  data-aos="fade-down">
       <div class="cursos col-xl-3 col-lg-3 col-sm-12">
-
         <img src="../fotos/Cursos/cosmetologia.jpg" alt="fotocat">
         <p class="text-center">Cosmetologia</p>
         <ul>
@@ -119,8 +119,11 @@
           <a class="btn text-light" href="contacto.html">Mas informacion</a>
         </div>
       </div>
-      <div class="cursos col-xl-3 col-lg-3 col-sm-12">
+    </div>
 
+
+    <div class="row justify-content-sm-around" data-aos="fade-left">
+      <div class="cursos col-xl-3 col-lg-3 col-sm-12">
         <img src="../fotos/Cursos/masajespa.jpg" alt="fotocat">
         <p class="text-center">Masaje Spa</p>
         <ul>
@@ -163,6 +166,8 @@
           <a class="btn text-light" href="contacto.html">Mas informacion</a>
         </div>
       </div>
+    </div>
+    <div class="row justify-content-sm-around" data-aos="fade-right">
       <div class="cursos col-xl-3 col-lg-3 col-sm-12">
 
         <img src="../fotos/Cursos/reflexologia.jpg" alt="fotocat">
@@ -207,14 +212,14 @@
         </div>
       </div>
     </div>
-    <!-- <div class="imgcursos">
+  </div>
+  <!-- <div class="imgcursos">
       <div class="containerfoto">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/3equESQVK7Q" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div> -->
-  </div>
 
 
 
@@ -249,6 +254,14 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init(   {
+        offset: 400, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000 // values from 0 to 3000, with step 50ms
+      });
+  </script>
 </body>
 
 </html>
