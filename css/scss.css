@@ -148,18 +148,6 @@ footer {
 .fotoscat1 img {
   width: 100%; }
 
-/*seccion Cursos*/
-#cursos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: auto; }
-
-#infocurso {
-  height: auto;
-  overflow: auto;
-  margin-left: 10px; }
-
 /*seccion protocolos*/
 #protocolos {
   display: flex;
@@ -174,9 +162,20 @@ footer {
 /*clases de Cursos*/
 .cursos {
   margin: 0.3rem;
-  justify-content: space-around; }
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-bottom: 10px;
+  padding-top: 10px; }
   .cursos img {
     width: 100%; }
+  .cursos p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 150%;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 4px; }
 
 /*clases Protocolo*/
 .protocolos {

@@ -202,20 +202,6 @@ footer {
     }
 }
 
-/*seccion Cursos*/
-
-#cursos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: auto;
-}
-
-#infocurso {
-    height: auto;
-    overflow: auto;
-    margin-left: 10px;
-}
 
 /*seccion protocolos*/
 #protocolos {
@@ -236,6 +222,19 @@ footer {
     margin: 0.3rem;
     img{width: 100%;}
     justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-bottom: 10px ;
+    padding-top: 10px ;
+    p{
+        margin-top:10px;
+        margin-bottom:10px;
+        font-size: 150%;
+        font-weight:600;
+        border: 1px solid black;
+        border-radius: 4px;
+
+    }
 }
 
 
