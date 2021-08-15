@@ -5,10 +5,8 @@ $colorclaro: white;
 
 //font sizes
 $font-grande: 2rem;
-$font-mediana: 1rem;
-$font-chica: 0.75rem;
-
-
+$font-mediana: 1.5rem;
+$font-chica: 1rem;
 
 /*clases Globales*/
 
@@ -37,12 +35,12 @@ footer {
     }
 }
 
-.f-dark{
-    color:$colorprimario
+.f-dark {
+    color: $colorprimario;
 }
 
-.f-light{
-    color:$colorclaro
+.f-light {
+    color: $colorclaro;
 }
 
 /*barra navegacion*/
@@ -59,33 +57,28 @@ footer {
     color: $colorclaro;
 }
 
-
-.principal{
+.principal {
     //border: 5px solid $colorprimario;
     border-radius: 10px;
     padding: 10px;
     font-size: $font-grande;
 }
 
-.separador{
-    margin:0;
+.separador {
+    margin: 0;
 }
 
-
-hr.prueba{
+hr.prueba {
     margin: 1rem 0;
-    background-color: $colorprimario; 
+    background-color: $colorprimario;
     border: 5px solid $colorprimario;
     border-radius: 10px;
     opacity: 1;
 }
 
-
-
-
 /*navbar*/
 
-.navbar{
+.navbar {
     margin-bottom: 10px;
 }
 
@@ -184,12 +177,10 @@ hr.prueba{
     //opacity: 0.75;
 }
 
-
 .fotoscat1 {
     transition: all 0.5s;
     height: auto;
 }
-
 
 .inglnk:hover {
     border: 2px solid darkblue;
@@ -206,33 +197,30 @@ hr.prueba{
     }
 }
 
-
 /*seccion protocolos*/
-
 
 /*clases de Cursos*/
 
-.cursos{
+.cursos {
     margin: 0.3rem;
-    img{width: 100%;}
+    img {
+        width: 100%;
+    }
     justify-content: space-around;
     // border: 1px solid black;
     border-radius: 4px;
-    padding-bottom: 10px ;
-    padding-top: 10px ;
+    padding-bottom: 10px;
+    padding-top: 10px;
     box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.39);
-    p{
-        margin-top:10px;
-        margin-bottom:10px;
+    p {
+        margin-top: 10px;
+        margin-bottom: 10px;
         font-size: 150%;
-        font-weight:600;
+        font-weight: 600;
         border: 1px solid black;
         border-radius: 4px;
-
     }
 }
-
-
 
 /*clases Protocolo*/
 
@@ -242,15 +230,15 @@ hr.prueba{
     background-color: $colorprimario;
 }
 
-.form-group{
-    margin-bottom:0.5rem;
-    label{margin-bottom:0rem;}
-    
+.form-group {
+    margin-bottom: 0.5rem;
+    label {
+        margin-bottom: 0rem;
+    }
 }
 
-
-.fotoContacto{
-    img{
+.fotoContacto {
+    img {
         width: 100%;
         display: none;
     }
@@ -267,9 +255,6 @@ textarea {
     box-sizing: border-box;
     resize: vertical;
 }
-
-
-
 
 /*clases Catalogo*/
 #portfolio-flters {
@@ -296,7 +281,6 @@ textarea {
             border-color: $colorprimario;
             background: $colorprimario;
             color: #fff;
-            
         }
         &:last-child {
             margin-right: 0;
@@ -401,29 +385,41 @@ textarea {
     }
 }
 
-
-.producto{        align-items: center;
+.producto {
+    align-items: center;
     justify-content: center;
 
-    img{width: 100%;
+    img {
+        width: 100%;
 
         margin-top: auto;
-        padding:5%
+        padding: 5%;
+    }
+    h3{
+        font-size: $font-grande;
+        font-weight: 800;
+        color:$colorprimario;
+        text-decoration: underline;
+}
+h4{
+    font-size: $font-mediana;
+    font-weight: 600;
+    color:$colorprimario;
+    text-decoration: underline;
+}
+p{
+    font-size: $font-chica;    
+    font-style: italic;
 }
 }
-
 
 /* media querys*/
 @media only screen and (min-width: 768px) {
-
-
 }
 
 @media only screen and (min-width: 1224px) {
-   
-
-    .fotoContacto{
-        img{
+    .fotoContacto {
+        img {
             width: 100%;
             display: block;
         }

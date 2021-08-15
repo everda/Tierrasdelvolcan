@@ -6,7 +6,7 @@ a {
 body {
   font-family: "Ubuntu Condensed", sans-serif;
   /*background-color: wheat;*/
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 300;
   width: 100%;
   /*background-image: url(../fotos/hoja1.jpg);*/ }
@@ -87,7 +87,7 @@ hr.prueba {
     font-weight: 700; }
   #carousel p {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     margin: 0 auto 30px auto; }
   #carousel .carousel-inner {
@@ -280,7 +280,7 @@ textarea {
     width: 100%; }
   .project-dec h4 {
     color: #ddd;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 5px;
     margin-top: -45px;
     padding-top: 50%;
@@ -291,7 +291,7 @@ textarea {
       color: #a8a8a8; }
   .project-dec span {
     color: #ddd;
-    font-size: 1rem; }
+    font-size: 1.5rem; }
     .project-dec span:hover {
       color: #a8a8a8; }
 
@@ -302,6 +302,19 @@ textarea {
     width: 100%;
     margin-top: auto;
     padding: 5%; }
+  .producto h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1f3253;
+    text-decoration: underline; }
+  .producto h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f3253;
+    text-decoration: underline; }
+  .producto p {
+    font-size: 1rem;
+    font-style: italic; }
 
 /* media querys*/
 @media only screen and (min-width: 1224px) {
