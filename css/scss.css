@@ -43,6 +43,9 @@ footer {
   padding: 10px;
   font-size: 2rem; }
 
+.separador {
+  margin: 0; }
+
 hr.prueba {
   margin: 1rem 0;
   background-color: #1f3253;
@@ -126,33 +129,9 @@ hr.prueba {
   width: 100%;
   bottom: 10px; }
 
-.container {
-  width: 100%; }
-
 .fotoscat1 {
   transition: all 0.5s;
   height: auto; }
-
-.inglnk {
-  margin-top: 20px;
-  height: auto;
-  color: #1f3253;
-  padding: 0.375rem 0.75rem;
-  border-radius: 0.25rem;
-  color: #fff;
-  background-color: #1f3253;
-  border: 2px solid #1f3253;
-  font-size: 0.75rem;
-  border-radius: 0.3rem;
-  width: 200px; }
-  .inglnk a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    margin: auto;
-    padding: 1px;
-    color: white;
-    font-size: 90%; }
 
 .inglnk:hover {
   border: 2px solid darkblue; }
@@ -165,16 +144,6 @@ hr.prueba {
   width: 100%; }
 
 /*seccion protocolos*/
-#protocolos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: auto; }
-
-#infoprotocolo {
-  height: auto;
-  margin: 10px; }
-
 /*clases de Cursos*/
 .cursos {
   margin: 0.3rem;
@@ -194,39 +163,6 @@ hr.prueba {
     border-radius: 4px; }
 
 /*clases Protocolo*/
-.protocolos {
-  display: grid;
-  grid-template-areas: "brazo none protimg protimg" "brazo none protdet protdet";
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 100px 5% auto 35%;
-  height: 80vh;
-  padding: 5px;
-  margin-top: 0px; }
-
-.brazo {
-  grid-area: brazo;
-  margin: 0px;
-  padding: 0px;
-  background-color: #1f3253; }
-
-.protimg {
-  grid-area: protimg; }
-
-.protdet {
-  grid-area: protdet; }
-
-.brazo ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-  .brazo ul a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    margin: auto;
-    padding: 1px;
-    color: white; }
-
 /*clases contacto*/
 .btn {
   background-color: #1f3253; }
@@ -358,6 +294,14 @@ textarea {
     font-size: 1rem; }
     .project-dec span:hover {
       color: #a8a8a8; }
+
+.producto {
+  align-items: center;
+  justify-content: center; }
+  .producto img {
+    width: 100%;
+    margin-top: auto;
+    padding: 5%; }
 
 /* media querys*/
 @media only screen and (min-width: 1224px) {
