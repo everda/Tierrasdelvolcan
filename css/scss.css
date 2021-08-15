@@ -280,7 +280,7 @@ textarea {
     width: 100%; }
   .project-dec h4 {
     color: #ddd;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 5px;
     margin-top: -45px;
     padding-top: 50%;
@@ -291,7 +291,7 @@ textarea {
       color: #a8a8a8; }
   .project-dec span {
     color: #ddd;
-    font-size: 1.5rem; }
+    font-size: 1rem; }
     .project-dec span:hover {
       color: #a8a8a8; }
 
