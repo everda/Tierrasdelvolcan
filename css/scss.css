@@ -5,11 +5,8 @@ a {
 
 body {
   font-family: 'Roboto', sans-serif;
-  /*background-color: wheat;*/
-  font-size: 1.5rem;
-  font-weight: 300;
-  width: 100%;
-  /*background-image: url(../fotos/hoja1.jpg);*/ }
+  font-size: 1rem;
+  width: 100%; }
 
 footer {
   background: #1f3253;
@@ -17,31 +14,16 @@ footer {
   margin-top: 10px;
   width: 100%; }
   footer p {
-    color: white;
-    font-size: 80%; }
-
-.f-dark {
-  color: #1f3253; }
-
-.f-light {
-  color: white; }
-
-/*barra navegacion*/
-.bg-dark {
-  background-color: #1f3253 !important; }
+    color: white; }
+  footer .btn-social {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px; }
 
 .text-center {
   align-self: center;
   margin: auto;
   text-align: center !important; }
-
-.font-clear {
-  color: white; }
-
-.principal {
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 2rem; }
 
 .separador {
   margin: 0; }
@@ -53,13 +35,21 @@ hr.prueba {
   border-radius: 10px;
   opacity: 1; }
 
+.btn {
+  background-color: #1f3253;
+  min-width: 200px; }
+
 .content {
   min-height: 100vh;
   margin-bottom: 30px; }
 
 /*navbar*/
 .navbar {
-  margin-bottom: 10px; }
+  margin-bottom: 5px;
+  height: 30px; }
+
+.bg-dark {
+  background-color: #1f3253 !important; }
 
 /*seccion carrusel*/
 #carousel .carousel,
@@ -87,11 +77,11 @@ hr.prueba {
     background-repeat: no-repeat; }
   #carousel h2 {
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700; }
   #carousel p {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.2;
     margin: 0 auto 30px auto; }
   #carousel .carousel-inner {
@@ -107,22 +97,12 @@ hr.prueba {
     left: 0px;
     width: 100%;
     right: auto; }
-  #carousel .btn-cat {
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 32px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin: 10px;
-    color: white;
-    background: #1f3253;
-    flex-wrap: flex-end; }
 
 /*clases index*/
-.logo img {
-  width: 100%; }
+.logo {
+  max-height: 200px; }
+  .logo img {
+    width: 100%; }
 
 .container__foto iframe {
   width: 100%; }
@@ -174,9 +154,6 @@ hr.prueba {
 
 /*clases Protocolo*/
 /*clases contacto*/
-.btn {
-  background-color: #1f3253; }
-
 .form-group {
   margin-bottom: 0.5rem; }
   .form-group label {
@@ -290,7 +267,7 @@ textarea {
     width: 100%; }
   .project-dec h4 {
     color: #ddd;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 5px;
     margin-top: -45px;
     padding-top: 50%;
@@ -301,7 +278,7 @@ textarea {
       color: #a8a8a8; }
   .project-dec span {
     color: #ddd;
-    font-size: 1rem; }
+    font-size: 0.9rem; }
     .project-dec span:hover {
       color: #a8a8a8; }
 
@@ -313,17 +290,17 @@ textarea {
     margin-top: auto;
     padding: 5%; }
   .producto h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #1f3253;
     text-decoration: underline; }
   .producto h4 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #1f3253;
     text-decoration: underline; }
   .producto p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-style: italic; }
 
 /* media querys*/

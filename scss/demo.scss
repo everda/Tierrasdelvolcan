@@ -4,9 +4,9 @@ $colorletra: black;
 $colorclaro: white;
 
 //font sizes
-$font-grande: 2rem;
-$font-mediana: 1.5rem;
-$font-chica: 1rem;
+$font-grande: 3rem;
+$font-mediana: 1rem;
+$font-chica: 0.9rem;
 
 /*clases Globales*/
 
@@ -17,13 +17,9 @@ a {
 
 body {
     font-family: 'Roboto', sans-serif;
-    /*background-color: wheat;*/
     font-size: $font-mediana;
-    font-weight: 300;
-    width: 100%;
-    /*background-image: url(../fotos/hoja1.jpg);*/
-}
-
+    width: 100%;}
+    
 footer {
     background: $colorprimario;
     height: 10rem;
@@ -31,38 +27,25 @@ footer {
     width: 100%;
     p {
         color: $colorclaro;
-        font-size: 80%;
+        
+    }
+    .btn-social{
+    border: 1px solid white;
+        border-radius: 5px;
+        padding: 5px;
     }
 }
 
-.f-dark {
-    color: $colorprimario;
-}
 
-.f-light {
-    color: $colorclaro;
-}
-
-/*barra navegacion*/
-.bg-dark {
-    background-color: $colorprimario !important;
-}
 
 .text-center {
     align-self: center;
     margin: auto;
     text-align: center !important;
 }
-.font-clear {
-    color: $colorclaro;
-}
 
-.principal {
-    //border: 5px solid $colorprimario;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: $font-grande;
-}
+
+
 
 .separador {
     margin: 0;
@@ -76,6 +59,14 @@ hr.prueba {
     opacity: 1;
 }
 
+
+
+.btn {
+    background-color: $colorprimario;
+    min-width: 200px;
+}
+
+
 .content{
     min-height: 100vh;
     margin-bottom: 30px;
@@ -84,8 +75,15 @@ hr.prueba {
 /*navbar*/
 
 .navbar {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    height: 30px;
 }
+ 
+.bg-dark {
+    background-color: $colorprimario !important;
+}
+
+
 
 /*seccion carrusel*/
 
@@ -143,24 +141,13 @@ hr.prueba {
         right: auto;
     }
 
-    .btn-cat {
-        font-weight: 400;
-        font-size: 16px;
-        letter-spacing: 1px;
-        display: inline-block;
-        padding: 8px 32px;
-        border-radius: 50px;
-        transition: 0.5s;
-        margin: 10px;
-        color: $colorclaro;
-        background: $colorprimario;
-        flex-wrap: flex-end;
-    }
+
 }
 
 /*clases index*/
 
 .logo {
+    max-height: 200px;
     img {
         width: 100%;
     }
@@ -241,10 +228,6 @@ hr.prueba {
 /*clases Protocolo*/
 
 /*clases contacto*/
-
-.btn {
-    background-color: $colorprimario;
-}
 
 .form-group {
     margin-bottom: 0.5rem;
