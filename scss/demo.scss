@@ -16,10 +16,11 @@ a {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: $font-mediana;
-    width: 100%;}
-    
+    width: 100%;
+}
+
 footer {
     background: $colorprimario;
     height: 10rem;
@@ -27,25 +28,19 @@ footer {
     width: 100%;
     p {
         color: $colorclaro;
-        
     }
-    .btn-social{
-    border: 1px solid white;
+    .btn-social {
+        border: 1px solid white;
         border-radius: 5px;
         padding: 5px;
     }
 }
-
-
 
 .text-center {
     align-self: center;
     margin: auto;
     text-align: center !important;
 }
-
-
-
 
 .separador {
     margin: 0;
@@ -59,33 +54,52 @@ hr.prueba {
     opacity: 1;
 }
 
-
-
 .btn {
     background-color: $colorprimario;
     min-width: 200px;
 }
 
-
-.content{
+.content {
     min-height: 100vh;
     margin-bottom: 30px;
 }
 
+h1 {
+    color: $colorprimario;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h3 {
+    font-weight: 700;
+}
+h4 {
+    font-weight: 300;
+    color: red;
+}
 /*navbar*/
 
 .navbar {
     margin-bottom: 5px;
-    height: 30px;
+    height: 55px;
 }
- 
+
 .bg-dark {
     background-color: $colorprimario !important;
 }
 
+/*clases index*/
 
+.logo {
+    max-height: 200px;
+    img {
+        width: 100%;
+    }
+}
 
-/*seccion carrusel*/
+.margintop {
+    margin-top: 30px;
+}
 
 #carousel .carousel,
 #carousel .carousel-inner,
@@ -140,119 +154,16 @@ hr.prueba {
         width: 100%;
         right: auto;
     }
-
-
 }
 
-/*clases index*/
-
-.logo {
-    max-height: 200px;
-    img {
-        width: 100%;
-    }
+.indexCursos {
+    background-color: #acacac4d;
+    padding: 100px;
 }
 
-.container__foto {
-    iframe {
-        width: 100%;
-    }
-}
-
-.container--grande {
-    position: flex;
-    height: 100%;
-    width: 100%;
-    bottom: 10px;
-    //background-image: url('https://placekitten.com/1200/800');
-    //background-size: cover;
-    //opacity: 0.75;
-}
-
-.fotoscat1 {
-    transition: all 0.5s;
-    height: auto;
-}
-
-.inglnk:hover {
-    border: 2px solid darkblue;
-}
-
-.fotoscat1:hover {
-    height: auto;
-    transform: scale(1.1, 1.1);
-}
-
-.fotoscat1 {
-    img {
-        width: 100%;
-    }
-}
-
-
-.margintop{
-    margin-top: 30px;
-}
-
-.indexCursos{
-    h1{
-        color:$colorprimario;
-        text-decoration: underline;
-    }
-}
-/*seccion protocolos*/
-
-/*clases de Cursos*/
-
-.cursos {
-    
-    img {
-        width: 100%;
-    }
-    justify-content: space-around;
-    // border: 1px solid black;
-    border-radius: 4px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.39);
-    p {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 150%;
-        font-weight: 700;
-        border: 1px solid black;
-        border-radius: 4px;
-    }
-}
-
-/*clases Protocolo*/
-
-/*clases contacto*/
-
-.form-group {
-    margin-bottom: 0.5rem;
-    label {
-        margin-bottom: 0rem;
-    }
-}
-
-.fotoContacto {
-    img {
-        width: 100%;
-        display: none;
-    }
-    display: none;
-}
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
+.indexProt {
+    background-color: #acacac77;
+    padding: 50px;
 }
 
 /*clases Catalogo*/
@@ -385,31 +296,132 @@ textarea {
 }
 
 .producto {
-    align-items: center;
-    justify-content: center;
-
+    padding: 50px;
     img {
         width: 100%;
-
-        margin-top: auto;
-        padding: 5%;
     }
-    h3{
-        font-size: $font-grande;
+
+    p {
+        font-size: $font-chica;
+        font-style: italic;
+    }
+}
+
+/*seccion protocolos*/
+
+.brazo {
+    padding: 10px;
+    .nav-link {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: $colorprimario;
+        text-decoration: none;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+        &:hover,
+        &:focus {
+            color: red;
+        }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .nav-link {
+            transition: none;
+        }
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+        color: #fff;
+        background-color: $colorprimario;
+    }
+
+    h3 {
+        background-color: $colorprimario;
+        color: $colorclaro;
+        margin-bottom: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
         font-weight: 700;
-        color:$colorprimario;
-        text-decoration: underline;
+    }
+    h4 {
+        font-weight: 300;
+        color: red;
+    }
+    p {
+        font-weight: 100;
+    }
+    li {
+        font-weight: 100;
+    }
+    .prot {
+        margin-bottom: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        font-weight: 700;
+    }
+    .cierre {
+        background-color: $colorprimario;
+        color: $colorclaro;
+        margin-bottom: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        font-weight: 700;
+    }
 }
-h4{
-    font-size: $font-mediana;
-    font-weight: 400;
-    color:$colorprimario;
-    text-decoration: underline;
+
+/*clases de Cursos*/
+
+.cursos {
+    img {
+        width: 100%;
+    }
+    justify-content: space-around;
+    // border: 1px solid black;
+    border-radius: 4px;
+    padding-bottom: 100px;
+    padding-top: 10px;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.39);
+    background-color: white;
+    margin: 10px;
+    p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 150%;
+        font-weight: 400;
+        font-style: italic;
+    }
+    li {
+        font-weight: 100;
+    }
 }
-p{
-    font-size: $font-chica;    
-    font-style: italic;
+
+/*clases Protocolo*/
+
+/*clases contacto*/
+
+.form-group {
+    margin-bottom: 0.5rem;
+    label {
+        margin-bottom: 0.5rem;
+    }
 }
+
+.fotoContacto {
+    img {
+        width: 100%;
+        display: none;
+    }
+    display: none;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
 }
 
 /* media querys*/

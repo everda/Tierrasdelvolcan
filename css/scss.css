@@ -4,7 +4,7 @@ a {
   text-decoration: none; }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   width: 100%; }
 
@@ -43,15 +43,35 @@ hr.prueba {
   min-height: 100vh;
   margin-bottom: 30px; }
 
+h1 {
+  color: #1f3253;
+  font-weight: 700;
+  font-style: italic; }
+
+h3 {
+  font-weight: 700; }
+
+h4 {
+  font-weight: 300;
+  color: red; }
+
 /*navbar*/
 .navbar {
   margin-bottom: 5px;
-  height: 30px; }
+  height: 55px; }
 
 .bg-dark {
   background-color: #1f3253 !important; }
 
-/*seccion carrusel*/
+/*clases index*/
+.logo {
+  max-height: 200px; }
+  .logo img {
+    width: 100%; }
+
+.margintop {
+  margin-top: 30px; }
+
 #carousel .carousel,
 #carousel .carousel-inner,
 #carousel .carousel-item,
@@ -98,83 +118,13 @@ hr.prueba {
     width: 100%;
     right: auto; }
 
-/*clases index*/
-.logo {
-  max-height: 200px; }
-  .logo img {
-    width: 100%; }
+.indexCursos {
+  background-color: #acacac4d;
+  padding: 100px; }
 
-.container__foto iframe {
-  width: 100%; }
-
-.container--grande {
-  position: flex;
-  height: 100%;
-  width: 100%;
-  bottom: 10px; }
-
-.fotoscat1 {
-  transition: all 0.5s;
-  height: auto; }
-
-.inglnk:hover {
-  border: 2px solid darkblue; }
-
-.fotoscat1:hover {
-  height: auto;
-  transform: scale(1.1, 1.1); }
-
-.fotoscat1 img {
-  width: 100%; }
-
-.margintop {
-  margin-top: 30px; }
-
-.indexCursos h1 {
-  color: #1f3253;
-  text-decoration: underline; }
-
-/*seccion protocolos*/
-/*clases de Cursos*/
-.cursos {
-  justify-content: space-around;
-  border-radius: 4px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.39); }
-  .cursos img {
-    width: 100%; }
-  .cursos p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 150%;
-    font-weight: 700;
-    border: 1px solid black;
-    border-radius: 4px; }
-
-/*clases Protocolo*/
-/*clases contacto*/
-.form-group {
-  margin-bottom: 0.5rem; }
-  .form-group label {
-    margin-bottom: 0rem; }
-
-.fotoContacto {
-  display: none; }
-  .fotoContacto img {
-    width: 100%;
-    display: none; }
-
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical; }
+.indexProt {
+  background-color: #acacac77;
+  padding: 50px; }
 
 /*clases Catalogo*/
 #portfolio-flters {
@@ -283,25 +233,101 @@ textarea {
       color: #a8a8a8; }
 
 .producto {
-  align-items: center;
-  justify-content: center; }
+  padding: 50px; }
   .producto img {
-    width: 100%;
-    margin-top: auto;
-    padding: 5%; }
-  .producto h3 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #1f3253;
-    text-decoration: underline; }
-  .producto h4 {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #1f3253;
-    text-decoration: underline; }
+    width: 100%; }
   .producto p {
     font-size: 0.9rem;
     font-style: italic; }
+
+/*seccion protocolos*/
+.brazo {
+  padding: 10px; }
+  .brazo .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #1f3253;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
+    .brazo .nav-link:hover, .brazo .nav-link:focus {
+      color: red; }
+  @media (prefers-reduced-motion: reduce) {
+    .brazo .nav-link {
+      transition: none; } }
+  .brazo .nav-pills .nav-link.active,
+  .brazo .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1f3253; }
+  .brazo h3 {
+    background-color: #1f3253;
+    color: white;
+    margin-bottom: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-weight: 700; }
+  .brazo h4 {
+    font-weight: 300;
+    color: red; }
+  .brazo p {
+    font-weight: 100; }
+  .brazo li {
+    font-weight: 100; }
+  .brazo .prot {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: 700; }
+  .brazo .cierre {
+    background-color: #1f3253;
+    color: white;
+    margin-bottom: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: 700; }
+
+/*clases de Cursos*/
+.cursos {
+  justify-content: space-around;
+  border-radius: 4px;
+  padding-bottom: 100px;
+  padding-top: 10px;
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.39);
+  background-color: white;
+  margin: 10px; }
+  .cursos img {
+    width: 100%; }
+  .cursos p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 150%;
+    font-weight: 400;
+    font-style: italic; }
+  .cursos li {
+    font-weight: 100; }
+
+/*clases Protocolo*/
+/*clases contacto*/
+.form-group {
+  margin-bottom: 0.5rem; }
+  .form-group label {
+    margin-bottom: 0.5rem; }
+
+.fotoContacto {
+  display: none; }
+  .fotoContacto img {
+    width: 100%;
+    display: none; }
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical; }
 
 /* media querys*/
 @media only screen and (min-width: 1224px) {
