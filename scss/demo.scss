@@ -1,5 +1,6 @@
 // variables colores
 $colorprimario: #1f3253;
+$colorsecundario:  #1f325377;
 $colorletra: black;
 $colorclaro: white;
 
@@ -66,6 +67,12 @@ hr.prueba {
 
 h1 {
     color: $colorprimario;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h2{
+    color:$colorsecundario;
     font-weight: 700;
     font-style: italic;
 }
@@ -293,6 +300,10 @@ h4 {
 }
 
 .producto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid $colorprimario;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.445);
     padding: 50px;
     img {
         width: 100%;
@@ -306,8 +317,12 @@ h4 {
 
 /*seccion protocolos*/
 
+.protocolo{margin: 0;
+    
+}
 .brazo {
     padding: 10px;
+    
     .nav-link {
         display: block;
         padding: 0.5rem 1rem;
@@ -319,32 +334,25 @@ h4 {
             color: red;
         }
     }
-    @media (prefers-reduced-motion: reduce) {
-        .nav-link {
-            transition: none;
-        }
-    }
+    
 
     .nav-pills .nav-link.active,
     .nav-pills .show > .nav-link {
         color: #fff;
-        background-color: $colorprimario;
+        background-color: $colorsecundario;
     }
 
+}
+.protCont{
+    
     h3 {
         background-color: $colorprimario;
         color: $colorclaro;
         margin-bottom: 10px;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
-        font-weight: 700;
-    }
-    h4 {
-        font-weight: 300;
-        color: red;
-    }
-    p {
-        font-weight: 100;
+        line-height: 33px;
+        
     }
     li {
         font-weight: 100;

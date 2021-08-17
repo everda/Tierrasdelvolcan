@@ -48,6 +48,11 @@ h1 {
   font-weight: 700;
   font-style: italic; }
 
+h2 {
+  color: #1f325377;
+  font-weight: 700;
+  font-style: italic; }
+
 h3 {
   font-weight: 700; }
 
@@ -229,6 +234,10 @@ h4 {
       color: #a8a8a8; }
 
 .producto {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #1f3253;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.445);
   padding: 50px; }
   .producto img {
     width: 100%; }
@@ -237,6 +246,9 @@ h4 {
     font-style: italic; }
 
 /*seccion protocolos*/
+.protocolo {
+  margin: 0; }
+
 .brazo {
   padding: 10px; }
   .brazo .nav-link {
@@ -247,39 +259,35 @@ h4 {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
     .brazo .nav-link:hover, .brazo .nav-link:focus {
       color: red; }
-  @media (prefers-reduced-motion: reduce) {
-    .brazo .nav-link {
-      transition: none; } }
   .brazo .nav-pills .nav-link.active,
   .brazo .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: #1f3253; }
-  .brazo h3 {
-    background-color: #1f3253;
-    color: white;
-    margin-bottom: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    font-weight: 700; }
-  .brazo h4 {
-    font-weight: 300;
-    color: red; }
-  .brazo p {
-    font-weight: 100; }
-  .brazo li {
-    font-weight: 100; }
-  .brazo .prot {
-    margin-bottom: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    font-weight: 700; }
-  .brazo .cierre {
-    background-color: #1f3253;
-    color: white;
-    margin-bottom: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    font-weight: 700; }
+    background-color: #1f325377; }
+
+.protCont h3 {
+  background-color: #1f3253;
+  color: white;
+  margin-bottom: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  line-height: 33px; }
+
+.protCont li {
+  font-weight: 100; }
+
+.protCont .prot {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-weight: 700; }
+
+.protCont .cierre {
+  background-color: #1f3253;
+  color: white;
+  margin-bottom: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-weight: 700; }
 
 /*clases de Cursos*/
 .cursos {
