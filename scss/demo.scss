@@ -16,7 +16,7 @@ a {
 }
 
 body {
-    font-family: "Ubuntu Condensed", sans-serif;
+    font-family: 'Roboto', sans-serif;
     /*background-color: wheat;*/
     font-size: $font-mediana;
     font-weight: 300;
@@ -74,6 +74,11 @@ hr.prueba {
     border: 5px solid $colorprimario;
     border-radius: 10px;
     opacity: 1;
+}
+
+.content{
+    min-height: 100vh;
+    margin-bottom: 30px;
 }
 
 /*navbar*/
@@ -139,7 +144,7 @@ hr.prueba {
     }
 
     .btn-cat {
-        font-weight: 500;
+        font-weight: 400;
         font-size: 16px;
         letter-spacing: 1px;
         display: inline-block;
@@ -197,12 +202,23 @@ hr.prueba {
     }
 }
 
+
+.margintop{
+    margin-top: 30px;
+}
+
+.indexCursos{
+    h1{
+        color:$colorprimario;
+        text-decoration: underline;
+    }
+}
 /*seccion protocolos*/
 
 /*clases de Cursos*/
 
 .cursos {
-    margin: 0.3rem;
+    
     img {
         width: 100%;
     }
@@ -216,7 +232,7 @@ hr.prueba {
         margin-top: 10px;
         margin-bottom: 10px;
         font-size: 150%;
-        font-weight: 600;
+        font-weight: 700;
         border: 1px solid black;
         border-radius: 4px;
     }
@@ -370,7 +386,7 @@ textarea {
         padding-top: 50%;
         text-decoration: none;
         text-transform: uppercase;
-        font-weight: 800;
+        font-weight: 700;
         &:hover {
             color: rgb(168, 168, 168);
         }
@@ -397,13 +413,13 @@ textarea {
     }
     h3{
         font-size: $font-grande;
-        font-weight: 800;
+        font-weight: 700;
         color:$colorprimario;
         text-decoration: underline;
 }
 h4{
     font-size: $font-mediana;
-    font-weight: 600;
+    font-weight: 400;
     color:$colorprimario;
     text-decoration: underline;
 }
