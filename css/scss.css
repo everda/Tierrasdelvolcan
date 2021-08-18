@@ -99,7 +99,8 @@ h4 {
   #carousel h2 {
     margin-bottom: 20px;
     font-size: 3rem;
-    font-weight: 700; }
+    font-weight: 700;
+    color: white; }
   #carousel p {
     width: 100%;
     font-size: 1rem;
@@ -119,12 +120,7 @@ h4 {
     width: 100%;
     right: auto; }
 
-.indexCursos {
-  background-color: #acacac4d;
-  padding: 100px; }
-
 .indexProt {
-  background-color: #acacac77;
   padding: 50px; }
 
 /*clases Catalogo*/
@@ -271,6 +267,9 @@ h4 {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   line-height: 33px; }
+
+.protCont p {
+  font-weight: 100; }
 
 .protCont li {
   font-weight: 100; }
