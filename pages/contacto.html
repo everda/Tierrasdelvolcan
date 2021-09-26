@@ -88,18 +88,18 @@
 
       <section class="row align-items-center justify-content-between">
         <div class="col-xl-6 col-lg-6 col-sm-12">
-          <form>
+          <form role="form" method="post" id="reused_form">
             <div class="form-group">
-              <label for="Nombre">Nombre </label>
-              <input type="text" class="form-control" id="Nombre" required>
+              <label for="name">Nombre </label>
+              <input type="text" class="form-control" id="name" name = "name" required>
             </div>
             <div class="form-group">
-              <label for="Email">Email </label>
-              <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" required>
+              <label for="email">Email </label>
+              <input name = "email" type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
             </div>
             <div class="form-group">
-              <label for="Texto">Mensaje</label>
-              <textarea class="form-control" id="Texto" rows="5" required></textarea>
+              <label for="comments">Mensaje</label>
+              <textarea name = "comments" class="form-control" id="comments" rows="5" required></textarea>
             </div>
 
             <div class="d-flex justify-content-center align-items-end">
@@ -138,7 +138,73 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-
+  <script>
+    $(function()
+    {
+        function after_form_submitted(data)
+        {
+            if(data.result == 'success')
+            {
+                $('form#reused_form').hide();
+                $('#success_message').show();
+                $('#error_message').hide();
+            }
+            else
+            {
+                $('#error_message').append('<ul></ul>');
+    
+                jQuery.each(data.errors,function(key,val)
+                {
+                    $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+                });
+                $('#success_message').hide();
+                $('#error_message').show();
+    
+                //reverse the response on the button
+                $('button[type="button"]', $form).each(function()
+                {
+                    $btn = $(this);
+                    label = $btn.prop('orig_label');
+                    if(label)
+                    {
+                        $btn.prop('type','submit' );
+                        $btn.text(label);
+                        $btn.prop('orig_label','');
+                    }
+                });
+    
+            }//else
+        }
+    
+      $('#reused_form').submit(function(e)
+          {
+            e.preventDefault();
+    console.log(e);
+            $form = $(this);
+            //show some response on the button
+            $('button[type="submit"]', $form).each(function()
+            {
+                $btn = $(this);
+                $btn.prop('type','button' );
+                $btn.prop('orig_label',$btn.text());
+                $btn.text('Sending ...');
+            });
+    
+    console.log(e);
+                        $.ajax({
+                    type: "POST",
+                    url: 'handler.php',
+                    data: $form.serialize(),
+                    success: after_form_submitted,
+                    dataType: 'json'
+                    
+                }
+                );
+                console.log($.ajax);
+    
+          });
+    });
+    </script>
 </body>
 
 </html>
